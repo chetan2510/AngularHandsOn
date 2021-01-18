@@ -1,0 +1,17 @@
+<div>
+  <h1>Users component active</h1>
+</div>
+
+<!--  <div *ngFor="let qwe of users">-->
+  <table mat-table [dataSource] = "">
+    <th>User Name</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+
+    <tr *ngFor="let users of userArray">
+      <td>{{users.userName}}</td>
+      <td>{{users.latitude}}</td>
+      <td>{{users.longitude}}</td>
+    </tr>
+  </table>
+
